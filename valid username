@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class validornot
+{
+	public static void main(String[] args) {
+String str1;
+String str2;
+System.out.println("enter the username: ");
+Scanner sc=new Scanner(System.in);
+str1=sc.nextLine();
+System.out.println("Renter the username: ");
+str2=sc.nextLine();
+if(str1.equals(str2))
+{
+System.out.println("valid");
+}
+else
+{
+    Sysytem.out.println("invalid");
+}
+}
+}
