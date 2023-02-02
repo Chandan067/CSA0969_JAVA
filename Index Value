@@ -1,0 +1,12 @@
+import java.util.*;
+class indexvalue {
+ public static void main(String []args) {
+String str = " ";
+Scanner s= new Scanner(System.in);
+System.out.println("enter the string:");
+String a= s.nextLine();
+System.out.println("String: "+str);
+int index = str.indexOf( a );
+System.out.println("a is at index %d", index);
+}
+}
