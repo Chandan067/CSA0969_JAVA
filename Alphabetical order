@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class NameSorter {
+  public static void main(String[] args) {
+    ArrayList<String> names = new ArrayList<>();
+    names.add("Sai");
+    names.add("Krishna");
+    names.add("Teja");
+    names.add("Swathi");
+    names.add("Jagadesh");
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Sort in ascending (1) or descending (2) order: ");
+    int sortOrder = sc.nextInt();
+
+    if (sortOrder == 1) {
+      Collections.sort(names);
+    } else if (sortOrder == 2) {
+      Collections.sort(names, Collections.reverseOrder());
+    }
+
+    System.out.println("Sorted names: " + names);
+  }
+}
